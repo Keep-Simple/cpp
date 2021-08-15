@@ -45,4 +45,5 @@ int main()
     Array a(4);
 
     Array b(a);
+    // Array b = a; same
 }
