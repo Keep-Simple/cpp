@@ -49,7 +49,6 @@ private:
         }
 
         cout << "Copy obj called " << this << endl;
-
         return *this;
     }
 };
