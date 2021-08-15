@@ -43,7 +43,8 @@ public:
         return *this;
     }
     // postfix increment
-    Point &operator++(int _)
+    // return not reference, for passing temp by copy. Otherwise, after reference to temp will be undefined
+    Point operator++(int _)
     {
         Point temp(*this);
         operator++();
